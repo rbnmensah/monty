@@ -1,4 +1,4 @@
-nclude "monty.h"
+#include "monty.h"
 /**
  * * execute - executes the opcode
  * * @stack: head linked list - stack
