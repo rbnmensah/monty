@@ -1,4 +1,7 @@
 #include "monty.h"
+#include <stdio.h>
+#include <stdlib.h>
+
 bus_t bus = {NULL, NULL, NULL, 0};
 /**
 * main - monty code interpreter
@@ -6,7 +9,7 @@ bus_t bus = {NULL, NULL, NULL, 0};
 * @argv: monty file location
 * Return: 0 on success
 */
-void getline(&content, &size, file)
+size_t getline(char **lineptr, size_t *n, FILE *stream);
 int main(int argc, char *argv[])
 {
 	char *content;
